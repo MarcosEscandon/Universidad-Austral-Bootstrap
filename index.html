@@ -15,11 +15,15 @@
 
      <!-- Bootstrap CSS // Referencia via NodeModules -->
      <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/main.css">
+   <!--
 
-    <title>Hello, world!</title>
+   <title>Hello, world!</title>
   </head>
   <body>
     <h1>Hello, world!</h1> 
+
+   -->
 
     <!-- Optional JavaScript; choose one of the two! -->
 
@@ -43,70 +47,134 @@
     -->
 
    	<div class="jumbotron">
-  		<div class="container">
-  			<h1>Hoteles</h1>
-  	 	</div>
+  		
+  		<h1>Hoteles</h1>
+  	 	
 	</div>
 
-  	<div class="container-fluid">
+  	<div class="container">
   		<div class="row">
-    		<div class="col-4">
+    		<div class="col-sm-4">
 
-  	<h2>Hotel A</h2>
-  		<p>Se encuentra en el centro de la ciudad.</p>
+  	<h2>Como es el sistema?</h2>
+  		<p>Busca los hoteles segun tus gustos!</p>
 
   			</div>
 
-  			<div class="col-4">
+  			<div class="col-sm-4">
 
-  	<h2>Hotel B</h2>
-  		<p>Se encuentra cerca de la playa.</p>
+  	<h2>Donde hago la reserva?</h2>
+  		<p>Elije la ciudad y luego ingresa tus datos!</p>
   		
   			</div>
 
-  			<div class="col-4">
+  			<div class="col-sm-4">
 
-  	<h2>Hotel C</h2>
-  		<p>Se encuentra cerca de la terminal de trenes.</p>
+  	<h2>Como puedo pagarlo?</h2>
+  		<p>Podes pagar con cualquier metodo de pago online!</p>
 
 			</div>
 
 	</div>		
 
-	<div class="row">
-  		<div class="col-3">
+	<div class="d-flex flex-wrap flex-row-reverse">
+  		<div class="card-hotel d-flex flex-column justify-content-between">
 
-  			<h3>Restaurant A</h3>
-  				<p>Comida de Mar.</p>
-  				<button type="button" class="btn btn-default">Boton-A</button>
+  			<div>	
+  			<h3>Hotel Madrid</h3>
+  				<p>Ubicado en la ciudad de Madrid.</p>
+  				<button class="btn btn-primary btn-reserva">Reservar</button>
+  			</div>	
 
   		</div>
 
- 		 <div class="col-3">
-  	
-  			<h3>Restaurant B</h3>
-  				<p>Comida Parrillera.</p>
-  				<button type="button" class="btn btn-default">Boton-B</button>
+ 		 <div class="card-hotel d-flex flex-column justify-content-between">
+
+  			<div>
+  			<h3>Hotel Roma</h3>
+  				<p>Ubicado en la ciudad de Roma.</p>
+  				<button class="btn btn-primary btn-reserva">Reservar</button>
+  			</div>
 
  		 </div>
 
- 		<div class="col-3">
-  	
-  			<h3>Restaurant C</h3>
-  				<p>Cerveceria y Picadas.</p>
-  				<button type="button" class="btn btn-default">Boton-C</button>
+ 		<div class="card-hotel d-flex flex-column justify-content-between">
+
+  			<div>
+  			<h3>Hotel Paris</h3>
+  				<p>Ubicado en la ciudad de Paris.</p>
+  				<button class="btn btn-primary btn-reserva">Reservar</button>
+  			</div>
 
   		</div>
 
-  		<div class="col-3">
-  	
-  			<h3>Restaurant D</h3>
-  				<p>Pizzeria y Comida Rapida.</p>
-  				<button type="button" class="btn btn-default">Boton-D</button>
+  		<div class="card-hotel d-flex flex-column justify-content-between">
+
+  			<div>
+  			<h3>Hotel Ams!</h3>
+  				<p>Ubicado en la ciudad de Amsterdam</p>
+  				<button class="btn btn-primary btn-reserva">Reservar</button>
+  			</div>
+
+  		</div>
+
+  	  		<div class="card-hotel d-flex flex-column justify-content-between">
+
+  			<div>
+  			<h3>Hotel Rotter!</h3>
+  				<p>Ubicado en la ciudad de Rotterdam</p>
+  				<button class="btn btn-primary btn-reserva">Reservar</button>
+  			</div>
+
+  		</div>
+
+  		  	<div class="card-hotel d-flex flex-column justify-content-between">
+
+  			<div>
+  			<h3>Hotel Sidney</h3>
+  				<p>Ubicado en la ciudad de Sidney.</p>
+  				<button class="btn btn-primary btn-reserva">Reservar</button>
+  			</div>
 
   		</div>
 
   	</div>
 
+  	<footer>
+
+  		<div class="row">	
+	  		<div class="col-sm-4 d-flex flex-column">
+	  			
+	  			<a href="https://www.facebook.com">Facebook</a>
+	  			<a href="https://www.twitter.com">Twitter</a>
+	  			<a href="https://www.instagram.com">Instagram</a>
+	  			<a href="https://www.google.com">Google+</a>
+
+	  		</div>
+
+	  		<div class="col-sm-4">
+	  			
+	  			<address>
+	  				
+	  				Colon 2200, Mar del Plata, ARG
+	  				+542234475125
+	  				cotacto@guiahoteles.com
+
+	  			</address>
+
+	  		</div>
+			<div class="col-sm-4 d-flex flex-column align-items-end">
+				
+	  			<a href="https://www.facebook.com">Nosotros</a>
+	  			<a href="https://www.twitter.com">Precios</a>
+	  			<a href="https://www.instagram.com">Terminos y Condiciones</a>
+	  			<a href="https://www.google.com">Contacto</a>
+
+			</div>
+		</div>
+
+  	</footer>
+
   </body>
+
 </html>
