@@ -1,0 +1,16 @@
+{
+  "name": "guia-hoteles",
+  "version": "1.0.0",
+  "description": "Nuestro primer proyecto de Nodejs",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://Marquitos-Escandon@bitbucket.org/Marquitos-Escandon/guia-hoteles.git"
+  },
+  "author": "Marcos Escandon",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/Marquitos-Escandon/guia-hoteles#readme"
+}
