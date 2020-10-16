@@ -17,5 +17,9 @@
   "devDependencies": {
     "lite-server": "^2.5.4"
   },
-  "dependencies": {}
+  "dependencies": {
+    "bootstrap": "^4.5.3",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  }
 }
