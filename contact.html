@@ -89,13 +89,81 @@
 
       </nav>
   		
-      <span>
+      <h1>Dejame tu comentario</h1>
+
+      <form>
         
-        Contacto. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-        
-      </span>
+        <div class="form-row">
+          
+          <div class="form-group col-sm-6">
+            
+            <label for="nombre">Nombre</label>
+            <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+
+          </div>
+          <div class="form-group col-sm-6"></div>
+
+            <label for="apellido">Apellido</label>
+            <input type="text" class="form-control" id="apellido" placeholder="Ingrese su apellido">          
+
+        </div>
+
+        <div class="form-group">
+          
+            <label for="email">E-mail</label>
+            <input type="email" class="form-control" id="email" placeholder="Ingrese su e-mail">
+
+        </div>
+
+        <div class="form-row">
+                  
+          <div class="form-group col-sm-9">
+                    
+            <label for="domicilio">Domicilio</label>
+            <input type="text" class="form-control" id="domicilio" placeholder="Ingrese su domicilio">
+
+          </div>
+          <div class="form-group col-sm-3">
+
+            <label for="provincia">Provincia</label>
+            <select id="provincia" class="form-control">
+
+              <option selected>Capital Federal</option>
+              <option>Buenos Aires</option> 
+              <option>Cordoba</option> 
+              <option>Santa Fe</option> 
+              <option>Chaco</option>
+
+            </select> 
+
+          </div>      
+        </div>  
+
+        <div class="form-group">
+          
+          <label for="comentario">Comentario</label>
+          <textarea id="comentario" class="form-control" rows="5"></textarea>
+
+        </div>
+
+        <div class="form-group">
+          
+          <div class="form-check">
+            
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">Quiero que me contacten</label>
+
+          </div>
+
+
+        </div>
+
+        <button type="submit" class="btn btn-primary"> Enviar</button>      
+
+      </form>
 
   	</div>
+
 
   	<footer>
 
