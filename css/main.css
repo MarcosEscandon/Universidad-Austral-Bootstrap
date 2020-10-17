@@ -1,6 +1,7 @@
 .jumbotron {
 
 	background-color: yellow;
+	color: black;
 	margin-top: 40px;
 
 }
@@ -23,7 +24,6 @@ footer {
 .card-hotel {
 
 	flex: 1 150px;
-	padding: 2px 5px 2px 5px;
 	margin-top: 10px;
 
 }
@@ -31,6 +31,7 @@ footer {
 .btn-reserva {
 
 	width: 100%;
+	border-radius: 0px;
 
 }
 
