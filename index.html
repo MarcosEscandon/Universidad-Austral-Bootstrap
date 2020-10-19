@@ -37,7 +37,7 @@
     <!-- De esta manera cargamos los scripts desde el Node modules -->
 
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/popper/dist/popper.min.js"></script>
+    <!-- <script src="node_modules/popper/dist/popper.min.js"></script> -->
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script> <!-- Agregado luego -->
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
@@ -156,7 +156,7 @@
 			<img class="card-img-top" src="images/hotel.png" alt="hotel img">
   				<p class="card-text">Ubicado en la ciudad de Madrid.<span class="badge badge-info">Rebaja!</span></p>
   				<button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>  				
-  				<button type="button" class="btn btn-primary btn-reserva"><span class="oi oi-plus"> Reservar</button>
+  				<button type="button" class="btn btn-primary btn-reserva" data-toggle="popover" title="Consulta las promociones vigentes"><span class="oi oi-plus"> Reservar</button>
   			</div>	
 
   		</div>
@@ -170,7 +170,7 @@
   			<img class="card-img-top" src="images/hotel.png" alt="hotel img">
   				<p class="card-text">Ubicado en la ciudad de Roma.<span class="badge badge-info">Rebaja!</span></p>
   				<button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>  				
-  				<button type="button" class="btn btn-primary btn-reserva"><span class="oi oi-plus"> Reservar</button>
+  				<button type="button" class="btn btn-primary btn-reserva" data-toggle="popover" title="Consulta las promociones vigentes"><span class="oi oi-plus"> Reservar</button>
   			</div>
 
  		 </div>
@@ -184,7 +184,7 @@
   			<img class="card-img-top" src="images/hotel.png" alt="hotel img">
   				<p class="card-text">Ubicado en la ciudad de Paris.<span class="badge badge-info">Rebaja!</span></p>
   				<button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>  				
-  				<button type="button" class="btn btn-primary btn-reserva"><span class="oi oi-plus"> Reservar</button>
+  				<button type="button" class="btn btn-primary btn-reserva" data-toggle="popover" title="Consulta las promociones vigentes"><span class="oi oi-plus"> Reservar</button>
   			</div>
 
   		</div>
@@ -198,7 +198,7 @@
   			<img class="card-img-top" src="images/hotel.png" alt="hotel img">
   				<p class="card-text">Ubicado en la ciudad de Amsterdam.<span class="badge badge-info">Rebaja!</span></p>
   				<button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>  				
-  				<button type="button" class="btn btn-primary btn-reserva"><span class="oi oi-plus"> Reservar</button>
+  				<button type="button" class="btn btn-primary btn-reserva" data-toggle="popover" title="Consulta las promociones vigentes"><span class="oi oi-plus"> Reservar</button>
   			</div>
 
   		</div>
@@ -212,7 +212,7 @@
   			<img class="card-img-top" src="images/hotel.png" alt="hotel img">
   				<p class="card-text">Ubicado en la ciudad de Rotterdam.<span class="badge badge-info">Rebaja!</span></p>
   				<button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>  				
-  				<button type="button" class="btn btn-primary btn-reserva"><span class="oi oi-plus"> Reservar</button>
+  				<button type="button" class="btn btn-primary btn-reserva" data-toggle="popover" title="Consulta las promociones vigentes"><span class="oi oi-plus"> Reservar</button>
   			</div>
 
   		</div>
@@ -226,7 +226,7 @@
   			<img class="card-img-top" src="images/hotel.png" alt="hotel img">
   				<p class="card-text" >Ubicado en la ciudad de Sidney.<span class="badge badge-info">Rebaja!</span></p>
   				<button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
-  				<button type="button" class="btn btn-primary btn-reserva"><span class="oi oi-plus"> Reservar</button>
+  				<button type="button" class="btn btn-primary btn-reserva" data-toggle="popover" title="Consulta las promociones vigentes"><span class="oi oi-plus"> Reservar</button>
   			</div>
 
   		</div>
@@ -308,14 +308,14 @@
 
   	</footer>
 
-  	<!--                (19/10/2020) Los tooltips funcionan sin este script hoy en dia:
+  	<!--                (19/10/2020) Las funciones responden sin este script hoy en dia: -->
   		<script>
   			$(function(){
   				$("[data-toggle="tooltip"]").tooltip();
+  				$("[data-toggle="popover"]").popover();  				
   			});
   		</script>
-  	-->
-
+  	
   </body>
 
 </html>
