@@ -34,8 +34,11 @@
 
     -->
 
+    <!-- De esta manera cargamos los scripts desde el Node modules -->
+
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper/dist/popper.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script> <!-- Agregado luego -->
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
@@ -148,7 +151,7 @@
 
   			<div class="card-header"><span class="oi oi-tag"></div>
   			<div class="card-body">	
-  			<h5 class="card-title">Hotel Madrid</h5>
+  			<h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Las primeras reservas cuentan con clases de flamenco gratis">Hotel Madrid</h5>
 			<h6 class="card-subtitle text-muted">España</h6>
 			<img class="card-img-top" src="images/hotel.png" alt="hotel img">
   				<p class="card-text">Ubicado en la ciudad de Madrid.<span class="badge badge-info">Rebaja!</span></p>
@@ -162,7 +165,7 @@
 
   			<div class="card-header"><span class="oi oi-tag"></div>
   			<div class="card-body">
-  			<h5 class="card-title">Hotel Roma</h5>
+  			<h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Las primeras reservas cuentan con clases de esgrima gratis">Hotel Roma</h5>
   			<h6 class="card-subtitle text-muted">Italia</h6>
   			<img class="card-img-top" src="images/hotel.png" alt="hotel img">
   				<p class="card-text">Ubicado en la ciudad de Roma.<span class="badge badge-info">Rebaja!</span></p>
@@ -176,7 +179,7 @@
 
   			<div class="card-header"><span class="oi oi-tag"></div>
   			<div class="card-body">
-  			<h5 class="card-title">Hotel Paris</h5>
+  			<h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Las primeras reservas cuentan con clases de pintura gratis">Hotel Paris</h5>
   			<h6 class="card-subtitle text-muted">Francia</h6>
   			<img class="card-img-top" src="images/hotel.png" alt="hotel img">
   				<p class="card-text">Ubicado en la ciudad de Paris.<span class="badge badge-info">Rebaja!</span></p>
@@ -190,7 +193,7 @@
 
   			<div class="card-header"><span class="oi oi-tag"></div>
   			<div class="card-body">
-  			<h5 class="card-title">Hotel Ams!</h5>
+  			<h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Las primeras reservas cuentan con clases de cultivo gratis">Hotel Ams!</h5>
   			<h6 class="card-subtitle text-muted">Holanda</h6>
   			<img class="card-img-top" src="images/hotel.png" alt="hotel img">
   				<p class="card-text">Ubicado en la ciudad de Amsterdam.<span class="badge badge-info">Rebaja!</span></p>
@@ -204,7 +207,7 @@
 
   			<div class="card-header"><span class="oi oi-tag"></div>
   			<div class="card-body">
-  			<h5 class="card-title">Hotel Rotter!</h5>
+  			<h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Las primeras reservas cuentan con clases de equitacion gratis">Hotel Rotter!</h5>
   			<h6 class="card-subtitle text-muted">Holanda</h6>
   			<img class="card-img-top" src="images/hotel.png" alt="hotel img">
   				<p class="card-text">Ubicado en la ciudad de Rotterdam.<span class="badge badge-info">Rebaja!</span></p>
@@ -218,7 +221,7 @@
 
   			<div class="card-header"><span class="oi oi-tag"></div>
   			<div class="card-body">
-  			<h5 class="card-title">Hotel Sidney</h5>
+  			<h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Las primeras reservas cuentan con clases de pesca gratis">Hotel Sidney</h5>
   			<h6 class="card-subtitle text-muted">Australia</h6>
   			<img class="card-img-top" src="images/hotel.png" alt="hotel img">
   				<p class="card-text" >Ubicado en la ciudad de Sidney.<span class="badge badge-info">Rebaja!</span></p>
@@ -304,6 +307,14 @@
 		</div>
 
   	</footer>
+
+  	<!--                (19/10/2020) Los tooltips funcionan sin este script hoy en dia:
+  		<script>
+  			$(function(){
+  				$("[data-toggle="tooltip"]").tooltip();
+  			});
+  		</script>
+  	-->
 
   </body>
 
