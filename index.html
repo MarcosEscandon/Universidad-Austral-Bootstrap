@@ -152,7 +152,8 @@
 			<h6 class="card-subtitle text-muted">España</h6>
 			<img class="card-img-top" src="images/hotel.png" alt="hotel img">
   				<p class="card-text">Ubicado en la ciudad de Madrid.<span class="badge badge-info">Rebaja!</span></p>
-  				<button class="btn btn-primary btn-reserva"><span class="oi oi-plus"> Reservar</button>
+  				<button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>  				
+  				<button type="button" class="btn btn-primary btn-reserva"><span class="oi oi-plus"> Reservar</button>
   			</div>	
 
   		</div>
@@ -165,7 +166,8 @@
   			<h6 class="card-subtitle text-muted">Italia</h6>
   			<img class="card-img-top" src="images/hotel.png" alt="hotel img">
   				<p class="card-text">Ubicado en la ciudad de Roma.<span class="badge badge-info">Rebaja!</span></p>
-  				<button class="btn btn-primary btn-reserva"><span class="oi oi-plus"> Reservar</button>
+  				<button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>  				
+  				<button type="button" class="btn btn-primary btn-reserva"><span class="oi oi-plus"> Reservar</button>
   			</div>
 
  		 </div>
@@ -178,7 +180,8 @@
   			<h6 class="card-subtitle text-muted">Francia</h6>
   			<img class="card-img-top" src="images/hotel.png" alt="hotel img">
   				<p class="card-text">Ubicado en la ciudad de Paris.<span class="badge badge-info">Rebaja!</span></p>
-  				<button class="btn btn-primary btn-reserva"><span class="oi oi-plus"> Reservar</button>
+  				<button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>  				
+  				<button type="button" class="btn btn-primary btn-reserva"><span class="oi oi-plus"> Reservar</button>
   			</div>
 
   		</div>
@@ -191,7 +194,8 @@
   			<h6 class="card-subtitle text-muted">Holanda</h6>
   			<img class="card-img-top" src="images/hotel.png" alt="hotel img">
   				<p class="card-text">Ubicado en la ciudad de Amsterdam.<span class="badge badge-info">Rebaja!</span></p>
-  				<button class="btn btn-primary btn-reserva"><span class="oi oi-plus"> Reservar</button>
+  				<button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>  				
+  				<button type="button" class="btn btn-primary btn-reserva"><span class="oi oi-plus"> Reservar</button>
   			</div>
 
   		</div>
@@ -204,7 +208,8 @@
   			<h6 class="card-subtitle text-muted">Holanda</h6>
   			<img class="card-img-top" src="images/hotel.png" alt="hotel img">
   				<p class="card-text">Ubicado en la ciudad de Rotterdam.<span class="badge badge-info">Rebaja!</span></p>
-  				<button class="btn btn-primary btn-reserva"><span class="oi oi-plus"> Reservar</button>
+  				<button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>  				
+  				<button type="button" class="btn btn-primary btn-reserva"><span class="oi oi-plus"> Reservar</button>
   			</div>
 
   		</div>
@@ -217,7 +222,48 @@
   			<h6 class="card-subtitle text-muted">Australia</h6>
   			<img class="card-img-top" src="images/hotel.png" alt="hotel img">
   				<p class="card-text" >Ubicado en la ciudad de Sidney.<span class="badge badge-info">Rebaja!</span></p>
-  				<button class="btn btn-primary btn-reserva"><span class="oi oi-plus"> Reservar</button>
+  				<button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
+  				<button type="button" class="btn btn-primary btn-reserva"><span class="oi oi-plus"> Reservar</button>
+  			</div>
+
+  		</div>
+
+  	</div>
+
+  	<div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  		
+  		<div class="modal-dialog" role="document">
+  			
+  			<div class="modal-content">
+  				
+  				<div class="modal-header">
+  					
+  					<h5 class="modaltitle" id="exampleModalLabel">Contacto con el hotel</h5>
+  					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+  						<span aria-hidden="true">&times;</span>
+  					</button>
+
+  				</div>
+
+  				<div class="modal-body">
+  					
+  					<form>
+  						<div class="form-group">
+  							<label for="recipient-name" class="col-form-label">Tu email:</label>
+  							<input type="text" class="form-control" id="recipient-name">
+  						</div>
+  						<div class="form-group">
+  							<label for="recipient-name" class="col-form-label">Mensaje:</label>
+  							<textarea class="form-control" id="message-text"></textarea>
+  						</div>  						
+  					</form>
+
+  				</div>
+
+  				<div class="modal-footer">
+  					<button type="button" class="btn btn-success">Enviar</button>
+  				</div>
+
   			</div>
 
   		</div>
