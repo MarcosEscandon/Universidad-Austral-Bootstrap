@@ -99,23 +99,40 @@
 
 	</div>
 
+	<img src="images/firenze.jpg" class="img-fluid" alt="responsive image">	
+
   	<div class="container">
+
   		<div class="row">
-    		<div class="col-sm-4">
+  			
+  			<div class="col-sm-4">
+  				<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#funciona" aria-expanded="false" aria-controls="multiCollapse1">Como funciona?</button>
+  			</div>
+  			<div class="col-sm-4">
+  				<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#reserva" aria-expanded="false" aria-controls="multiCollapse1">Donde puedo reservar?</button>
+  			</div>
+  			<div class="col-sm-4">
+  				<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#pago" aria-expanded="false" aria-controls="multiCollapse1">Como pago?</button>
+  			</div>
+
+  		</div>
+
+  		<div class="row">
+    		<div class="col-sm-4 collapse multi-collapse" id="funciona">
 
   	<h2>Como es el sistema?</h2>
   		<p>Busca los hoteles segun tus gustos!</p>
 
   			</div>
 
-  			<div class="col-sm-4">
+  			<div class="col-sm-4 collapse multi-collapse" id="reserva">
 
   	<h2>Donde hago la reserva?</h2>
   		<p>Elije la ciudad y luego ingresa tus datos!</p>
   		
   			</div>
 
-  			<div class="col-sm-4">
+  			<div class="col-sm-4 collapse multi-collapse" id="pago">
 
   	<h2>Como puedo pagarlo?</h2>
   		<p>Podes pagar con cualquier metodo de pago online!</p>
@@ -124,7 +141,7 @@
 
 	</div>	
 
-	<img src="images/firenze.jpg" class="img-fluid" alt="responsive image">	
+
 
 	<div class="d-flex flex-wrap flex-row-reverse">
   		<div class="card card-hotel d-flex flex-column justify-content-between ml-2">
