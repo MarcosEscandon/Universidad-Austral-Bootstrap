@@ -173,7 +173,7 @@
 			<h6 class="card-subtitle text-muted">España</h6>
 			<img class="card-img-top" src="images/hotel.png" alt="hotel img">
   				<p class="card-text">Ubicado en la ciudad de Madrid.<span class="badge badge-info">Rebaja!</span></p>
-  				<button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>  				
+  				<button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto" id="contactoBtn">Contacto</button>  				
   				<button type="button" class="btn btn-primary btn-reserva" data-toggle="popover" title="Consulta las promociones vigentes"><span class="oi oi-plus"> Reservar</button>
   			</div>	
 
@@ -187,7 +187,7 @@
   			<h6 class="card-subtitle text-muted">Italia</h6>
   			<img class="card-img-top" src="images/hotel.png" alt="hotel img">
   				<p class="card-text">Ubicado en la ciudad de Roma.<span class="badge badge-info">Rebaja!</span></p>
-  				<button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>  				
+  				<button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto" id="contactoBtn">Contacto</button>  				
   				<button type="button" class="btn btn-primary btn-reserva" data-toggle="popover" title="Consulta las promociones vigentes"><span class="oi oi-plus"> Reservar</button>
   			</div>
 
@@ -201,7 +201,7 @@
   			<h6 class="card-subtitle text-muted">Francia</h6>
   			<img class="card-img-top" src="images/hotel.png" alt="hotel img">
   				<p class="card-text">Ubicado en la ciudad de Paris.<span class="badge badge-info">Rebaja!</span></p>
-  				<button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>  				
+  				<button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto" id="contactoBtn">Contacto</button>  				
   				<button type="button" class="btn btn-primary btn-reserva" data-toggle="popover" title="Consulta las promociones vigentes"><span class="oi oi-plus"> Reservar</button>
   			</div>
 
@@ -215,7 +215,7 @@
   			<h6 class="card-subtitle text-muted">Holanda</h6>
   			<img class="card-img-top" src="images/hotel.png" alt="hotel img">
   				<p class="card-text">Ubicado en la ciudad de Amsterdam.<span class="badge badge-info">Rebaja!</span></p>
-  				<button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>  				
+  				<button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto" id="contactoBtn">Contacto</button>  				
   				<button type="button" class="btn btn-primary btn-reserva" data-toggle="popover" title="Consulta las promociones vigentes"><span class="oi oi-plus"> Reservar</button>
   			</div>
 
@@ -229,7 +229,7 @@
   			<h6 class="card-subtitle text-muted">Holanda</h6>
   			<img class="card-img-top" src="images/hotel.png" alt="hotel img">
   				<p class="card-text">Ubicado en la ciudad de Rotterdam.<span class="badge badge-info">Rebaja!</span></p>
-  				<button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>  				
+  				<button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto" id="contactoBtn">Contacto</button>  				
   				<button type="button" class="btn btn-primary btn-reserva" data-toggle="popover" title="Consulta las promociones vigentes"><span class="oi oi-plus"> Reservar</button>
   			</div>
 
@@ -243,7 +243,7 @@
   			<h6 class="card-subtitle text-muted">Australia</h6>
   			<img class="card-img-top" src="images/hotel.png" alt="hotel img">
   				<p class="card-text" >Ubicado en la ciudad de Sidney.<span class="badge badge-info">Rebaja!</span></p>
-  				<button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
+  				<button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto" id="contactoBtn">Contacto</button>
   				<button type="button" class="btn btn-primary btn-reserva" data-toggle="popover" title="Consulta las promociones vigentes"><span class="oi oi-plus"> Reservar</button>
   			</div>
 
@@ -332,8 +332,33 @@
   				$("[data-toggle='tooltip']").tooltip();
   				$("[data-toggle='popover']").popover(); 
   				$('.carousel').carousel({
-  					interval: 2000
-  				});				
+  					interval: 2000	
+  				});		
+
+  				$("#contacto").on("show.bs.modal", function (e){
+  					console.log("el modal se esta mostrando");
+
+  						$("#contactoBtn").removeClass("btn-outline-success");
+  						$("#contactoBtn").addClass("btn-primary");
+  						$("#contactoBtn").prop("disabled", true);  						
+  				});
+
+   				$("#contacto").on("shown.bs.modal", function (e){
+  					console.log("el modal se mostro");  					
+  				}); 
+
+  				$("#contacto").on("hide.bs.modal", function (e){
+  					console.log("el modal se esta ocultando");
+  				});
+
+   				$("#contacto").on("hidden.bs.modal", function (e){
+  					console.log("el modal se oculto");
+
+  						$("#contactoBtn").removeClass("btn-primary");
+  						$("#contactoBtn").addClass("btn-outline-success");  					
+  					$("#contactoBtn").prop("disabled", false);  					
+  				});   								
+
   			});
   		</script>
   	
