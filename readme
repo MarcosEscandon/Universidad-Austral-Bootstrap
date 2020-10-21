@@ -2,10 +2,17 @@ Inicio del proyecto de Guia hoteles
 
 GitBash commands:
 
+	- mkdir ejemplo --> crea la carpeta ejemplo
+	- touch ejemplo.extension --> crea archivo (ejemplo.extension)
+	- cd ejemplo --> entra a la carpeta ejemplo. // cd .. (vuelve a la anterior)
+	- ls --> lista de archivos dentro de la carpeta.
 	- Ctrl+C --> Close
-	- npm install ejemplo --> instala el modulo localmente de los node_modules
+
+	(Algunas estan definidas en el archivo package.json correspondiente)
+	- npm install ejemplo --> instala el modulo localmente de los node_modules. // --save-dev (guardar en la parte de desarrollo)
 	- npm run dev --> Correr el servidor para poder ver la pagina con la que estamos trabajando
 	- npm run scss --> Corre el node sass
+
 	- git add . --> Agrega archivos nuevos o modificados (se pone antes del commit -m)
 	- git commit -m "texto explicativo" --> Agregamos comentarios sobre nuestros cambios
 	- git push --> Carga contenido desde el repositorio local al remoto
