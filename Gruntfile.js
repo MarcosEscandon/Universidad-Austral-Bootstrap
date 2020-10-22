@@ -6,6 +6,7 @@ module.exports = function (grunt){
 
 	// Configuracion de proyecto
 	grunt.initConfig({
+		pkg: grunt.file.readJSON('package.json'),	// agregado
 		sass: {
 			dist: {
 				files: [{
