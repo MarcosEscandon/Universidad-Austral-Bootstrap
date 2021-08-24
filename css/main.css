@@ -1,54 +1,38 @@
 .jumbotron {
-
 	background-color: yellow;
 	color: black;
-	margin-top: 40px;
-	
+	margin-top: 40px;	
 }
 
 .btn {
-
 	margin-bottom: 5px; 
-
 }
 
 footer {
-
 	padding: 10px 10px 0 10px;
 	background-color: yellow;
 	margin-bottom: 0px;
 	margin-top: 10px;
-
 }
 
 .card-hotel {
-
 	flex: 1 150px;
 	margin-top: 10px;
-
 }
 
 .btn-reserva {
-
 	width: 100%;
 	border-radius: 0px;
-
 }
 
 .footer-adress-icon {
-
 	padding-right: 10px;
-
 }
 
 .tab-content {
-
 	padding-top: 10px;
-
 }
 
 .img-fluid {
-
 	padding-bottom: 10px;
-
 }
