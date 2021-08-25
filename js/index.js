@@ -28,6 +28,5 @@ $("#contacto").on("show.bs.modal", function (e){
   		$("#contactoBtn").addClass("btn-outline-success");  					
   		$("#contactoBtn").prop("disabled", false);  					
   			});   								
-
-  			
+		
   		});	
